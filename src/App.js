@@ -1,64 +1,31 @@
 import React, { Component } from 'react';
-import Marked from 'marked';
 import Editor from './Editor';
 import Preview from './Preview';
 import './App.css';
 
-Marked.setOptions({sanitize: true});
-
-const initialInput = `# Heading
-
-## Sub-heading
-
-### Another deeper heading
- 
-Paragraphs are separated
-by a blank line.
-
-Two spaces at the end of a line leave a  
-line break.
-
-Text attributes _italic_, *italic*, __bold__, **bold**, \`monospace\`.
-
-Horizontal rule:
-
----
-
-Bullet list:
-
-  * apples
-  * oranges
-  * pears
-
-Numbered list:
-
-  1. apples
-  2. oranges
-  3. pears
-
-A [link](https://github.com/vanillaSlice).`;
-
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {input: initialInput};
-    this.updateInput = this.updateInput.bind(this);
-  }
-  
-  updateInput(text) {
+
+  state = {
+    input: '# Heading\n\n## Sub-heading\n\n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nTwo spaces at the end of a line leave a  \nline break.\n\nText attributes _italic_, *italic*, __bold__, **bold**, `monospace`.\n\nHorizontal rule:\n\n---\n\nBullet list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n  \nA [link](https://github.com/vanillaSlice).'
+  };
+
+  updateInput = this.updateInput.bind(this);
+
+  updateInput(input) {
     this.setState({
-      input: text
+      input: input
     });
   }
   
   render() {
     return (
-      <div className="container">
+      <div className="App">
         <Editor input={this.state.input} onChange={this.updateInput} />
-        <Preview markdown={Marked(this.state.input)} />
+        <Preview input={this.state.input} />
       </div>
     );
   }
+
 }
 
 export default App;

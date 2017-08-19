@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "gh-pages": "^1.0.0",
     "marked": "^0.3.6",
     "react": "^15.6.1",
