@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.App>* {
+.App > * {
   width: 50% !important;
   height: 100% !important;
   margin: 0 20px !important;
@@ -28,11 +28,13 @@
     flex-direction: column;
     height: auto;
   }
-  .App>* {
+
+  .App > * {
     width: 100% !important;
     margin: 0 0 20px 0 !important;
   }
-  .App>*:last-child {
+
+  .App > *:last-child {
     margin-bottom: 0 !important;
   }
 }
