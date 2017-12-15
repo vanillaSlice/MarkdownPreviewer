@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { FormControl } from 'react-bootstrap';
+
+import './Editor.css';
 
 class Editor extends Component {
   constructor(props) {
@@ -13,12 +16,13 @@ class Editor extends Component {
 
   render() {
     return (
-      <textarea
-        className="Editor form-control"
+      <FormControl
+        className="Editor"
         rows="30"
         cols="50"
         value={this.props.input}
         onChange={this.handleChange}
+        componentClass="textarea"
       />
     );
   }
