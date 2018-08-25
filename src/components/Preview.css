@@ -6,7 +6,7 @@
 }
 
 .Preview .panel-body {
-  height: calc(100vh - 223px);
+  height: 90%;
   overflow: auto;
 }
 
