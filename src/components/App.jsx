@@ -35,7 +35,7 @@ class App extends Component {
         <Header />
         <Container>
           <Alert className="mt-3" color="primary">
-            Learn about
+            Learn about&nbsp;
             <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown here</a>
             .
           </Alert>
