@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Input } from 'reactstrap';
 
-import './Editor.css';
-
 class Editor extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +19,7 @@ class Editor extends Component {
 
     return (
       <Input
-        className="Editor"
+        className="Editor mb-3"
         rows="30"
         cols="50"
         value={input}

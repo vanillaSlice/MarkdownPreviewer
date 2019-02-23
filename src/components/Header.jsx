@@ -1,8 +1,10 @@
 import React from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Container, Navbar, NavbarBrand } from 'reactstrap';
 
 export default () => (
-  <Navbar color="dark">
-    <NavbarBrand href=".">Markdown Previewer</NavbarBrand>
+  <Navbar color="dark" dark>
+    <Container>
+      <NavbarBrand href=".">Markdown Previewer</NavbarBrand>
+    </Container>
   </Navbar>
 );

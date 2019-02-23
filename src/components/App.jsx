@@ -12,8 +12,6 @@ import Header from './Header';
 import Editor from './Editor';
 import Preview from './Preview';
 
-import './App.css';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -33,21 +31,19 @@ class App extends Component {
     const { input } = this.state;
 
     return (
-      <div>
+      <div className="App">
         <Header />
         <Container>
-          <Alert color="primary">
-            Learn about Markdown
-            <strong>
-              <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a>
-            </strong>
+          <Alert className="mt-3" color="primary">
+            Learn about Markdown&nbsp;
+            <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a>
             .
           </Alert>
           <Row>
-            <Col xs="12" sm="6">
+            <Col xs="12" md="6">
               <Editor input={input} onChange={this.updateInput} />
             </Col>
-            <Col xs="12" sm="6">
+            <Col xs="12" md="6">
               <Preview input={input} />
             </Col>
           </Row>
