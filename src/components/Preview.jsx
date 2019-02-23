@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 import { Card, CardBody, CardHeader } from 'reactstrap';
 import marked from 'marked';
 
-import './Preview.css';
-
 function compileMarkdown(input) {
   return marked(input, { sanitize: true });
 }
@@ -14,7 +12,7 @@ function compileMarkdown(input) {
 const Preview = (props) => {
   const { input } = props;
   return (
-    <Card className="Preview">
+    <Card className="Preview mb-3">
       <CardHeader>Preview</CardHeader>
       <CardBody dangerouslySetInnerHTML={{ __html: compileMarkdown(input) }} />
     </Card>
