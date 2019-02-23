@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createElement } from 'react';
+import { render } from 'react-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './components/App';
-import registerServiceWorker from './registerServiceWorker';
 
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
+const AppElement = createElement(App);
+const rootElement = document.getElementById('root');
 
-ReactDOM.render(React.createElement(App), document.getElementById('root'));
-
-registerServiceWorker();
+render(AppElement, rootElement);

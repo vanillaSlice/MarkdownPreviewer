@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FormControl } from 'react-bootstrap';
+import { Input } from 'reactstrap';
 
 import './Editor.css';
 
@@ -11,18 +11,22 @@ class Editor extends Component {
   }
 
   handleChange(event) {
-    this.props.onChange(event.target.value);
+    const { value } = event.target;
+    const { onChange } = this.props;
+    onChange(value);
   }
 
   render() {
+    const { input } = this.props;
+
     return (
-      <FormControl
+      <Input
         className="Editor"
         rows="30"
         cols="50"
-        value={this.props.input}
+        value={input}
         onChange={this.handleChange}
-        componentClass="textarea"
+        type="textarea"
       />
     );
   }

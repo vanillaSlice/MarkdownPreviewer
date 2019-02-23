@@ -1,5 +1,12 @@
-import React, { Component } from 'react';
-import { Alert, Col, Grid, Row } from 'react-bootstrap';
+import React, {
+  Component,
+} from 'react';
+import {
+  Alert,
+  Col,
+  Container,
+  Row,
+} from 'reactstrap';
 
 import Header from './Header';
 import Editor from './Editor';
@@ -23,22 +30,28 @@ class App extends Component {
   }
 
   render() {
+    const { input } = this.state;
+
     return (
       <div>
         <Header />
-        <Grid>
-          <Alert bsStyle="info">
-            Learn about Markdown <strong><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a></strong>.
+        <Container>
+          <Alert color="primary">
+            Learn about Markdown
+            <strong>
+              <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a>
+            </strong>
+            .
           </Alert>
           <Row>
-            <Col xs={12} sm={6}>
-              <Editor input={this.state.input} onChange={this.updateInput} />
+            <Col xs="12" sm="6">
+              <Editor input={input} onChange={this.updateInput} />
             </Col>
-            <Col xs={12} sm={6}>
-              <Preview input={this.state.input} />
+            <Col xs="12" sm="6">
+              <Preview input={input} />
             </Col>
           </Row>
-        </Grid>
+        </Container>
       </div>
     );
   }
