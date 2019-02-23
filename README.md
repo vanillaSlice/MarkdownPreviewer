@@ -5,26 +5,52 @@
 [![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/MarkdownPreviewer/master.svg)](https://coveralls.io/github/vanillaSlice/MarkdownPreviewer?branch=master)
 [![License](https://img.shields.io/github/license/vanillaSlice/MarkdownPreviewer.svg)](LICENSE)
 
-A Markdown previewer written using React. A working version can be viewed [here](https://vanillaslice.github.io/MarkdownPreviewer/).
+A [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) previewer built
+using [React](https://reactjs.org/). A deployed version can be viewed
+[here](https://vanillaslice.github.io/MarkdownPreviewer/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+## Screenshot
 
-## Installing dependencies
+![Screenshot](/images/screenshot-1.png)
+
+## Getting Started
+
+### Prerequisites
+
+* [npm](https://www.npmjs.com/)
+
+### Installing Dependencies
+
+From your terminal/command prompt run:
+
 ```
-yarn install
+npm install
 ```
 
-## Running locally
+### Running
+
+From your terminal/command prompt run:
+
 ```
-yarn start
+npm start
 ```
 
-## Run tests
-```
-yarn test
-```
+Point your browser to [localhost:3000](http://localhost:3000).
 
-## Deploy
-```
-yarn run deploy
-```
+## Technology Used
+
+For those of you that are interested, the technology used in this project includes:
+
+* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+* [React](https://reactjs.org/)
+* [Jest](https://jestjs.io/) (Testing)
+
+## Useful Links
+
+Resources useful for the completion of this project:
+
+* [Create React App](https://github.com/facebook/create-react-app) (React starter kit)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
