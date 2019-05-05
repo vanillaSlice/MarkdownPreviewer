@@ -2,10 +2,10 @@ import React, {
   Component,
 } from 'react';
 import {
-  Alert,
   Col,
   Container,
   Row,
+  UncontrolledAlert,
 } from 'reactstrap';
 
 import Header from './Header';
@@ -34,12 +34,12 @@ class App extends Component {
       <div className="App">
         <Header />
         <Container>
-          <Alert className="mt-3" color="primary">
+          <UncontrolledAlert className="mt-3" color="primary">
             Learn about&nbsp;
             <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown here</a>
             .
-          </Alert>
-          <Row>
+          </UncontrolledAlert>
+          <Row className="mt-3">
             <Col xs="12" md="6">
               <Editor input={input} onChange={this.updateInput} />
             </Col>
