@@ -8,8 +8,9 @@ import {
   UncontrolledAlert,
 } from 'reactstrap';
 
-import Header from './Header';
 import Editor from './Editor';
+import Footer from './Footer';
+import Header from './Header';
 import Preview from './Preview';
 
 class App extends Component {
@@ -48,6 +49,7 @@ class App extends Component {
             </Col>
           </Row>
         </Container>
+        <Footer />
       </div>
     );
   }
