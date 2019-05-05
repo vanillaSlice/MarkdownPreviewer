@@ -7,7 +7,7 @@
 
 A [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) previewer built
 using [React](https://reactjs.org/). A deployed version can be viewed
-[here](https://vanillaslice.github.io/MarkdownPreviewer/).
+[here](https://markdownpreviewer.mikelowe.xyz/).
 
 ## Screenshot
 
