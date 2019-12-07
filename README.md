@@ -1,7 +1,7 @@
 # Markdown Previewer
 
 [![Latest Release](https://img.shields.io/github/release/vanillaSlice/MarkdownPreviewer.svg)](https://github.com/vanillaSlice/MarkdownPreviewer/releases/latest)
-[![Build Status](https://img.shields.io/travis/vanillaSlice/MarkdownPreviewer/master.svg)](https://travis-ci.org/vanillaSlice/MarkdownPreviewer)
+[![Build Status](https://img.shields.io/travis/com/vanillaSlice/MarkdownPreviewer/master.svg)](https://travis-ci.com/vanillaSlice/MarkdownPreviewer)
 [![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/MarkdownPreviewer/master.svg)](https://coveralls.io/github/vanillaSlice/MarkdownPreviewer?branch=master)
 [![License](https://img.shields.io/github/license/vanillaSlice/MarkdownPreviewer.svg)](LICENSE)
 
